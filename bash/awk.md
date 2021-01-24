@@ -18,7 +18,7 @@ cat data.txt
 cat sum.sh
 ```
 
-```
+```bash
 #!/bin/bash
 cat data.txt | awk 'BEGIN{sum=0;} {sum+=$1;} END{print sum;}'
 ```
@@ -37,7 +37,7 @@ cat data.txt | awk 'BEGIN{sum=0;} {sum+=$1;} END{print sum;}'
 cat average.sh
 ```
 
-```
+```bash
 #!/bin/bash
 cat data.txt | awk 'BEGIN{sum=0;} {sum+=$1;} END{print sum/NR;}'
 ```
@@ -56,7 +56,7 @@ cat data.txt | awk 'BEGIN{sum=0;} {sum+=$1;} END{print sum/NR;}'
 cat variance.sh
 ```
 
-```
+```bash
 #!/bin/bash
 cat data.txt | awk 'BEGIN {n=0; sum=0; ss=0;} \
                     {x[NR]=$1; n++; sum+=$1;} \
