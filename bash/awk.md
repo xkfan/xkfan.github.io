@@ -12,7 +12,7 @@ cat data.txt
 3
 ```
 
-## 1 Calcuate sum
+## 1 Calculate sum
 
 ```bash
 cat sum.sh
@@ -31,7 +31,7 @@ cat data.txt | awk 'BEGIN{sum=0;} {sum+=$1;} END{print sum;}'
 6
 ```
 
-## 2 Calcuate average
+## 2 Calculate average
 
 ```bash
 cat average.sh
@@ -50,7 +50,7 @@ cat data.txt | awk 'BEGIN{sum=0;} {sum+=$1;} END{print sum/NR;}'
 2
 ```
 
-## ３ Calcuate variance
+## ３ Calculate variance
 
 ```bash
 cat variance.sh
