@@ -1,6 +1,7 @@
 # VS CODE快捷键
 - F12：跳转到定义
 - Ctrl + Alt + '-'：返回跳转之前的位置
+- Ctrl + Shift + f : 全局搜索
 
 ## Some Useful links about remove vscode
 
