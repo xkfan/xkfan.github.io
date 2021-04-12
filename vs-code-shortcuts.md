@@ -2,6 +2,7 @@
 - F12：跳转到定义
 - Ctrl + Alt + '-'：返回跳转之前的位置
 - Ctrl + Shift + f : 全局搜索
+- Ctrl + p / Ctrl + e: 根据文件名搜索文件
 
 ## Some Useful links about remove vscode
 
