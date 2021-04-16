@@ -17,7 +17,9 @@
 [Virtuality](http://www.gotw.ca/publications/mill18.htm)
 
 ## High Performance Linpack
-[PHL](http://www.netlib.org/benchmark/hpl/)
+[HPL](http://www.netlib.org/benchmark/hpl/)
+
+[Design and Implementation of LAPACK and ScaLAPACK](https://people.eecs.berkeley.edu/~demmel/cs267/lecture12/lecture12.html)
 
 ## Conferences
 [Conferences](https://xkfan.github.io/links/conferences)
