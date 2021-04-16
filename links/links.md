@@ -13,6 +13,13 @@
 
 [If Conversion](https://slideplayer.com/slide/16299923/)
 
+## HPC courses
+[U.C.Berkeley CS267 Applications of Parallel Computers](https://people.eecs.berkeley.edu/~demmel/cs267/)
+
+[U.C.Berkeley CS267 lecture 2 Designing fast linear algebra kernels in the presence of memory hierarchies](https://people.eecs.berkeley.edu/~demmel/cs267/lecture02.html)
+
+[U.C.Berkeley CS267 lecture 12 Design and Implementation of LAPACK and ScaLAPACK](https://people.eecs.berkeley.edu/~demmel/cs267/lecture12/lecture12.html)
+
 ## C++
 [Virtuality](http://www.gotw.ca/publications/mill18.htm)
 
