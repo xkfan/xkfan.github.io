@@ -32,3 +32,8 @@
 
 ## Conferences
 [Conferences](https://xkfan.github.io/links/conferences)
+
+## Latex
+[Latex math](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+
+[Latex colors](http://latexcolor.com/)
