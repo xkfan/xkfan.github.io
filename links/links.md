@@ -45,3 +45,7 @@
 
 ## Research compilers
 [Tiramisu Compiler](http://tiramisu-compiler.org/)
+
+
+## Benchmarks
+[PolyBench/C](http://web.cse.ohio-state.edu/~pouchet.2/software/polybench/)
