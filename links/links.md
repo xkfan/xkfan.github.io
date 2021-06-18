@@ -41,5 +41,7 @@
 ## People
 [Vasileios Porpodas](http://vporpo.me/) a compiler engineer at Google, research on SLP.
 
+[SAMAN AMARASINGHE](https://people.csail.mit.edu/saman/#)
+
 ## Research compilers
 [Tiramisu Compiler](http://tiramisu-compiler.org/)
