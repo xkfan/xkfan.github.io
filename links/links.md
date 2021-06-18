@@ -37,3 +37,6 @@
 [Latex math](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
 [Latex colors](http://latexcolor.com/)
+
+## People
+[Vasileios Porpodas](http://vporpo.me/) a compiler engineer at Google, research on SLP.
