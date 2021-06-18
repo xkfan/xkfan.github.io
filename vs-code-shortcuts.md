@@ -1,8 +1,12 @@
 # VS CODE快捷键
+- Ctrl + Shift + p 或 F1：显示所有命令
 - F12：跳转到定义
 - Ctrl + Alt + '-'：返回跳转之前的位置
 - Ctrl + Shift + f : 全局搜索
 - Ctrl + p / Ctrl + e: 根据文件名搜索文件
+- Ctrl + \：水平拆分编辑器
+- F1显示所有命令，输入"View: toggle terminal"：切换集成终端
+- Ctrl + Shift + [ / ]：代码折叠或展开
 
 ## Some Useful links about remove vscode
 
