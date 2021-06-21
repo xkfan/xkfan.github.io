@@ -49,3 +49,6 @@
 
 ## Benchmarks
 [PolyBench/C](http://web.cse.ohio-state.edu/~pouchet.2/software/polybench/)
+
+## Others
+[Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/cn/zh/develop/articles/intel-sdm.html)
