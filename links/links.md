@@ -23,6 +23,8 @@
 ## C++
 [Virtuality](http://www.gotw.ca/publications/mill18.htm)
 
+[Aravind Prakash](https://dblp.org/pid/127/9208.html) does research on C++ analysis
+
 ## High Performance Linpack
 [Jack Dongarra](http://www.netlib.org/utk/people/JackDongarra/)
 
