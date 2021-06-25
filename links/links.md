@@ -8,10 +8,13 @@
 ## SPH
 [SPHERIC](https://spheric-sph.org/index)
 
-## Compiler courses
-[COMPILER OPTIMIZATION, WINTER 2018, University of Toronto](http://www.cs.toronto.edu/~pekhimenko/courses/cscd70-w18/content.html?utm_source=wechat_session&utm_medium=social&utm_oi=61552401055744)
+## Compiler
 
-[If Conversion](https://slideplayer.com/slide/16299923/)
+[course COMPILER OPTIMIZATION, WINTER 2018, University of Toronto](http://www.cs.toronto.edu/~pekhimenko/courses/cscd70-w18/content.html?utm_source=wechat_session&utm_medium=social&utm_oi=61552401055744)
+
+[course If Conversion](https://slideplayer.com/slide/16299923/)
+
+[How is GCC IR different from LLVM IR?](https://stackoverflow.com/questions/40799696/how-is-gcc-ir-different-from-llvm-ir/40802063) an answer on stackoverflow
 
 ## HPC courses
 [U.C.Berkeley CS267 Applications of Parallel Computers](https://people.eecs.berkeley.edu/~demmel/cs267/)
