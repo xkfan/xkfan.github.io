@@ -57,3 +57,6 @@
 
 ## ISAs
 [ISAs](https://xkfan.github.io/links/ISAs/isas)
+
+## 学院简介
+[学院简介](https://www.nudt.edu.cn/xysz/jsjxy/index.htm)
