@@ -75,3 +75,24 @@ cat data.txt | awk 'BEGIN {n=0; sum=0; ss=0;} \
 ```
 0.666667
 ```
+
+## 4 Calculate geomean
+
+```bash
+cat geomean.sh
+```
+
+```bash
+#!/bin/bash
+cat data.txt | awk 'BEGIN {prod = 1;} \
+                    {prod *= $1;} \
+                    END {print prod ^ (1/NR);}'
+```
+
+```bash
+./geomean.sh
+```
+
+```
+1.81712
+```
