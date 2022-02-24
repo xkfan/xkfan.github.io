@@ -134,7 +134,36 @@ $ make ARCH=arm64 INSTALL_HDR_PATH=${installdir}/${targetarch} headers_install
 
 ### 3.4 Build glibc
 
+Modify glibc-2.30/Makefile and glibc-2.30/support/Makefile.
+So "links-dso-program-c.c" is used instead of "links-dso-program.cc",
+which requires a c++ compiler.
+
+glibc-2.30/Makefile
+
 ```bash
+#ifeq (,$(CXX))
+LINKS_DSO_PROGRAM = links-dso-program-c
+#else
+#LINKS_DSO_PROGRAM = links-dso-program
+#endif
+```
+
+glibc-2.30/support/Makefile
+
+```bash
+#ifeq (,$(CXX))
+LINKS_DSO_PROGRAM = links-dso-program-c
+#else
+#LINKS_DSO_PROGRAM = links-dso-program
+#LDLIBS-links-dso-program = -lstdc++ -lgcc -gcc_s $(libunwind)
+#endif
+```
+
+Build glibc with "aarch64-unkonwn-linux-gnu-gcc" built in gcc stage1.
+
+```bash
+$ export PATH=${installdir}/bin:$PATH
+$ export CC=aarch64-unknown-linux-gnu-gcc
 $ mkdir ${builddir}/build-glibc
 $ cd ${builddir}/build-glibc
 $ ${srcdir}/glibc-2.30/configure --prefix=${installdir}/${targetarch} \
@@ -169,3 +198,20 @@ $ ${srcdir}/gcc-11.1.0/configure --prefix=${installdir} \
 $ make
 $ make install
 ```
+
+After this stage is finished, we are ready to use the cross toolchain.
+
+## 4 Use the cross-compiler toolchain
+
+To use the cross-compiler toolchain, set the following environment:
+
+```bash
+$ export CROSSGCCDIR=${installdir}
+$ export PATH=${CROSSGCCDIR}/bin:$PATH
+```
+
+Then we are ready to use
+aarch64-unknown-linux-gnu-gcc,
+aarch64-unknown-linux-gnu-g++,
+and
+aarch64-unknown-linux-gnu-gfortran.
