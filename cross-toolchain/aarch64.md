@@ -41,27 +41,131 @@ and a directory "${topdir}/install" for installing the software.
 ### 2.1 Create the "srcs", "build" and "install" directory
 
 ```bash
-mkdir ${topdir}/srcs
-mkdir ${topdir}/build
-mkdir ${topdir}/install
+$ mkdir ${topdir}/srcs
+$ mkdir ${topdir}/build
+$ mkdir ${topdir}/install
 ```
 
 ### 2.2 Define a few environment variables
 
 ```bash
-export srcdir=${topdir}/srcs
-export builddir=${topdir}/build
-export installdir=${topdir}/install
-export targetarch=aarch64-unknown-linux-gnu
+$ export srcdir=${topdir}/srcs
+$ export builddir=${topdir}/build
+$ export installdir=${topdir}/install
+$ export targetarch=aarch64-unknown-linux-gnu
 ```
 
 ### 2.3 Unzip the source code
 
 ```bash
-tar xvf gcc-11.1.0 -C ${srcdir}
-tar xvf glibc-2.30.tar.xz -C ${srcdir}
-tar xvf binutils-2.37.tar.xz -C ${srcdir}
-tar xvf linux-4.19.230.tar.xz -C ${srcdir}
+$ tar xvf gcc-11.1.0 -C ${srcdir}
+$ tar xvf glibc-2.30.tar.xz -C ${srcdir}
+$ tar xvf binutils-2.37.tar.xz -C ${srcdir}
+$ tar xvf linux-4.19.230.tar.xz -C ${srcdir}
 ```
 
 ## 3 The cross-compiler build process
+
+### 3.1 Build binutils
+
+binutils provides assembler (as) and linker (ld).
+
+```bash
+$ mkdir ${builddir}/build-binutils
+$ cd ${builddir}/build-binutils
+$ ${srcdir}/binutils-2.37/configure --enable-gold \
+                                    --enable-plugins \
+                                    --disable-werror \
+                                    --prefix=${installdir} \
+                                    --build=x86_64-linux-gnu \
+                                    --host=x86_64-linux-gnu \
+                                    --target=${targetarch}
+$ make
+$ make install
+```
+
+### 3.2 Build gcc stage1
+
+At this stage,
+only "c" is enabled as glibc requires only "aarch64-unknown-linux-gnu-gcc".
+
+"c++" can not be enabled as it causes the following error:
+
+"checking dynamic linker characteristics... configure: error: Link tests are not allowed after GCC_NO_EXECUTABLES."
+
+"--with-newlib --without-headers" tells the configuration not to worry about headers and libc at this stage.
+
+"libsanitizer" is disabled as it causes an error during the building process.
+
+```bash
+$ mkdir ${builddir}/build-gcc-stage1
+$ cd ${builddir}/build-gcc-stage1
+$ ${srcdir}/gcc-11.1.0/configure --prefix=${installdir} \
+                                 --build=x86_64-linux-gnu \
+                                 --host=x86_64-linux-gnu \
+                                 --target=${targetarch} \
+                                 --enable-languages=c \
+                                 --with-newlib \
+                                 --without-headers \
+                                 --disable-libsanitizer \
+                                 --disable-shared \
+                                 --disable-threads \
+                                 --enable-tls \
+                                 --disable-libatomic \
+                                 --disable-libmudflap \
+                                 --disable-libssp \
+                                 --disable-libquadmath \
+                                 --disable-libgomp \
+                                 --disable-nls \
+                                 --disable-bootstrap
+$ make
+$ make install
+```
+
+### 3.3 Get linux headers
+
+Specify "ARCH=arm64" instead of "ARCH=aarch64" is because
+the linux-kernel only contains "arm64".
+
+```bash
+$ cd ${srcdir}/linux-4.19.230
+$ make ARCH=arm64 INSTALL_HDR_PATH=${installdir}/${targetarch} headers_install
+```
+
+### 3.4 Build glibc
+
+```bash
+$ mkdir ${builddir}/build-glibc
+$ cd ${builddir}/build-glibc
+$ ${srcdir}/glibc-2.30/configure --prefix=${installdir}/${targetarch} \
+                                 --host=${targetarch} \
+                                 --disable-werror \
+                                 --disable-multilib \
+                                 --with-headers=${installdir}/${targetarch}/include
+$ make
+$ make install
+```
+
+### 3.5 Build gcc stage2
+
+This is the final stage.
+
+```bash
+$ mkdir ${builddir}/build-gcc-stage2
+$ cd ${builddir}/build-gcc-stage2
+$ ${srcdir}/gcc-11.1.0/configure --prefix=${installdir} \
+                                 --build=x86_64-linux-gnu \
+                                 --host=x86_64-linux-gnu \
+                                 --target=${targetarch} \
+                                 --enable-languages=c,c++,fortran \
+                                 --enable-shared \
+                                 --enable-tls \
+                                 --disable-libsanitizer \
+                                 --disable-libmudflap \
+                                 --disable-libssp \
+                                 --disable-libquadmath \
+                                 --disable-nls \
+                                 --disable-bootstrap
+$ make
+$ make install
+```
