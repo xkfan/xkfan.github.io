@@ -6,11 +6,9 @@
 
 [Ｃ语言中直接函数调用和间接函数调用的底层调用方式 X86 & AArch64](https://xkfan.github.io/function-call-low-level-details)
 
+[Cheatsheets](https://xkfan.github.io/cheatsheets/index)
+
 [Bash operations](https://xkfan.github.io/bash/bash)
-
-[git branch operations](https://xkfan.github.io/git)
-
-[ssh](https://xkfan.github.io/ssh)
 
 [Some Useful Links](https://xkfan.github.io/links/links)
 
