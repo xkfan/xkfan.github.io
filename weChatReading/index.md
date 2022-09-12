@@ -2,4 +2,6 @@
 
 [RISC-V](https://xkfan.github.io/weChatReading/risc-v)
 
+[COMPILER](https://xkfan.github.io/weChatReading/compiler)
+
 [PPT](https://xkfan.github.io/weChatReading/ppt)
