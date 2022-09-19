@@ -11,3 +11,13 @@
 [NASA, Microchip, SiFive Announces Partnership for RISC-V Spaceflight Computing Platform](https://www.hackster.io/news/nasa-microchip-sifive-announces-partnership-for-risc-v-spaceflight-computing-platform-f52c55cf14f6)
 
 [NASA Selects SiFive and Makes RISC-V the Go-to Ecosystem for Future Space Missions](https://www.sifive.com/press/nasa-selects-sifive-and-makes-risc-v-the-go-to-ecosystem)
+
+### Apple Exploring RISC-V
+
+[苹果正在积极转向RISC-V](https://mp.weixin.qq.com/s/PU08HJ_HBWptcN0AhcIzXw)
+
+[Apple Exploring RISC-V, Hiring RISC-V ‘High Performance’ Programmers](https://riscv.org/news/2021/09/apple-exploring-risc-v-hiring-risc-v-high-performance-programmers-anton-shilov-toms-hardware/)
+
+[Apple Exploring RISC-V, Hiring RISC-V 'High Performance' Programmers](https://www.tomshardware.com/news/apple-looking-for-risc-v-programmers)
+
+[Apple Working on RISC-V Architecture](https://www.tomshardware.com/news/apple-looking-for-risc-v-programmers)
