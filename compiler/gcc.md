@@ -2,7 +2,19 @@
 
 记录一些对gcc代码的分析以及使用技巧
 
-## TODO
+## GCC源码分析
+
+TODO
+
+1. Loop split
+
+2. Loop vectorizer
+
+3. SLP vectorizer
+
+## GCC开发
+
+TODO
 
 1. How to write a gimple pass?
 
