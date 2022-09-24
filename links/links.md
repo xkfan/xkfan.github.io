@@ -35,9 +35,6 @@
 
 [Design and Implementation of LAPACK and ScaLAPACK](https://people.eecs.berkeley.edu/~demmel/cs267/lecture12/lecture12.html)
 
-## Conferences
-[Conferences](https://xkfan.github.io/links/conferences)
-
 ## Latex
 [Latex math](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
