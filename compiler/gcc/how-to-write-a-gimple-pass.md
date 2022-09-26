@@ -333,3 +333,45 @@ index e9ed3c7bc..5ca9cc8fe 100644
  
    NEXT_PASS (pass_expand);
  ```
+
+## 7. Testing
+
+We use a very simple example to evaluate our new pass.
+
+```c
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+  double a, b, c;
+  a = 2.0;
+  b = 3.0;
+  c = a + b;
+  
+  char *str = "hello world";
+  
+  printf("c: %f\n", c);
+  printf("str: %s\n", str);
+  
+  return 0;
+}
+```
+
+We compile the example code with compiler option *`-ftree-ssa-gimple-pass`*:
+
+```bash
+gcc -ftree-ssa-gimple-pass -o ex test.c
+```
+
+We will get the following output:
+
+```bash
+val: a
+val type: double
+val: b
+val type: double
+val: c
+val type: double
+val: str
+val type: char *
+```
