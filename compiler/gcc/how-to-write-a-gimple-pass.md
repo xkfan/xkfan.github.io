@@ -314,3 +314,22 @@ index 15693fee1..ee8053b26 100644
  extern gimple_opt_pass *make_pass_warn_function_return (gcc::context *ctxt);
  extern gimple_opt_pass *make_pass_warn_function_noreturn (gcc::context *ctxt);
  ```
+
+## 6. Set the location of our new pass
+
+The location of a pass is defined in *`passes.def`*
+We set our new pass as the last gimple pass before the *`gimple`* code is lowered into *`rtl`* code.
+
+```patch
+diff --git a/gcc/passes.def b/gcc/passes.def
+index e9ed3c7bc..5ca9cc8fe 100644
+--- a/gcc/passes.def
++++ b/gcc/passes.def
+@@ -413,6 +413,7 @@ along with GCC; see the file COPYING3.  If not see
+   NEXT_PASS (pass_gimple_isel);
+   NEXT_PASS (pass_cleanup_cfg_post_optimizing);
+   NEXT_PASS (pass_warn_function_noreturn);
++  NEXT_PASS (pass_gimple_pass);
+ 
+   NEXT_PASS (pass_expand);
+ ```
