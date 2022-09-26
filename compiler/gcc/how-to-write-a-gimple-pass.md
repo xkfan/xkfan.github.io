@@ -74,3 +74,205 @@ index 24bb64198..093747e85 100644
  
  /* -f{,no-}sanitize{,-recover}= suboptions.  */
 ```
+
+## 3. Write the new pass
+
+### 3.1 Describe the *`pass_data`* of the new pass
+
+Each gimple pass contains a pass description in a data structure called *`pass_data`*
+
+```c
+const pass_data pass_data_gimple_pass =
+{
+  GIMPLE_PASS, /* type */
+  "gimple_pass", /* name */
+  OPTGROUP_ALL, /* optinfo_flags */
+  TV_GIMPLE_PASS, /* tv_id */
+  PROP_ssa, /* properties_required */
+  0, /* properties_provided */
+  0, /* properties_destroyed */
+  0, /* todo_flags_start */
+  0, /* todo_flags_finish */
+};
+```
+
+- The *`type`* field describes the type of the pass, *`GIMPLE_PASS`* or *`GIMPLE_PASS`*.
+- The *`name`* field describes the name of the pass.
+- The *`tv_id`* field defines a *`timing variable`* id, which is used to measure run-time performance of the compiler.
+
+### 3.2 Define the main part of the new pass
+
+We define the new gimple pass as *`pass_gimple_pass`*, which is a derived class of *`gimple_opt_pass`*.
+
+```c
+class pass_gimple_pass : public gimple_opt_pass
+{
+public:
+  pass_gimple_pass (gcc::context *ctxt)
+    : gimple_opt_pass (pass_data_gimple_pass, ctxt)
+  {}
+
+  /* opt_pass methods: */
+  virtual bool gate (function *) {
+      return flag_tree_ssa_gimple_pass;
+  }
+
+  virtual unsigned int execute (function *);
+
+}; // class pass_gimple_pass
+```
+
+A *`gimple_opt_pass`* includes two important functions:
+
+- *`gate`*: determines whether this pass will be executed.
+- *`execute`*: describes how to perform this pass.
+
+Function *`execute`* iterates over all basic blocks.
+In each basic block, it iterates over all variable declares, dumps their names and types in the screen.
+
+```c
+unsigned int
+pass_gimple_pass::execute (function *fun) {
+
+  const char *fname = IDENTIFIER_POINTER (DECL_NAME (cfun->decl));
+  fprintf(stderr, "fn name: %s\n", fname);
+
+  /// traverse over blocks
+  tree block;
+  for (block = DECL_INITIAL (current_function_decl);
+       block; block = BLOCK_CHAIN(block)) {
+    tree t;
+    /// traverse over trees
+    for (t = BLOCK_VARS (block); t; t = TREE_CHAIN (t)) {
+      /// dump var decls
+      if (TREE_CODE(t) == VAR_DECL) {
+        fprintf(stderr, "val: %s\n", print_generic_expr_to_str(t));
+        fprintf(stderr, "val type: %s\n", print_generic_expr_to_str(TREE_TYPE (t)));
+      }
+    }
+  }  
+
+  return 0;
+}
+```
+
+### 3.3 Define pass registration function
+
+```c
+gimple_opt_pass *
+make_pass_gimple_pass (gcc::context *ctxt)
+{
+  return new pass_gimple_pass (ctxt);
+}
+```
+
+### 3.4 *`tree-ssa-gimple-pass.c`*
+
+Putting it all together
+
+```patch
+diff --git a/gcc/tree-ssa-gimple-pass.c b/gcc/tree-ssa-gimple-pass.c
+new file mode 100644
+index 000000000..6b66bedec
+--- /dev/null
++++ b/gcc/tree-ssa-gimple-pass.c
+@@ -0,0 +1,103 @@
++#include "config.h"
++#include "system.h"
++#include "coretypes.h"
++#include "backend.h"
++#include "target.h"
++#include "rtl.h"
++#include "tree.h"
++#include "gimple.h"
++#include "predict.h"
++#include "alloc-pool.h"
++#include "tree-pass.h"
++#include "ssa.h"
++#include "optabs-tree.h"
++#include "gimple-pretty-print.h"
++#include "alias.h"
++#include "fold-const.h"
++#include "gimple-fold.h"
++#include "gimple-iterator.h"
++#include "gimplify.h"
++#include "gimplify-me.h"
++#include "stor-layout.h"
++#include "tree-cfg.h"
++#include "tree-dfa.h"
++#include "tree-ssa.h"
++#include "builtins.h"
++#include "internal-fn.h"
++#include "case-cfn-macros.h"
++#include "optabs-libfuncs.h"
++#include "tree-eh.h"
++#include "targhooks.h"
++#include "domwalk.h"
++
++#include "cfgloop.h"
++#include "tree-vectorizer.h"
++#include "cfghooks.h"  // split_edge
++
++namespace {
++
++const pass_data pass_data_gimple_pass =
++{
++  GIMPLE_PASS, /* type */
++  "gimple_pass", /* name */
++  OPTGROUP_ALL, /* optinfo_flags */
++  TV_GIMPLE_PASS, /* tv_id */
++  PROP_ssa, /* properties_required */
++  0, /* properties_provided */
++  0, /* properties_destroyed */
++  0, /* todo_flags_start */
++  0, /* todo_flags_finish */
++};
++
++class pass_gimple_pass : public gimple_opt_pass
++{
++public:
++  pass_gimple_pass (gcc::context *ctxt)
++    : gimple_opt_pass (pass_data_gimple_pass, ctxt)
++  {}
++
++  /* opt_pass methods: */
++  virtual bool gate (function *) {
++      return flag_tree_ssa_gimple_pass;
++  }
++
++  virtual unsigned int execute (function *);
++
++}; // class pass_gimple_pass
++
++unsigned int
++pass_gimple_pass::execute (function *fun) {
++
++  const char *fname = IDENTIFIER_POINTER (DECL_NAME (cfun->decl));
++  fprintf(stderr, "fn name: %s\n", fname);
++
++  /// traverse over blocks
++  tree block;
++  for (block = DECL_INITIAL (current_function_decl);
++       block; block = BLOCK_CHAIN(block)) {
++    tree t;
++    /// traverse over trees
++    for (t = BLOCK_VARS (block); t; t = TREE_CHAIN (t)) {
++      /// dump var decls
++      if (TREE_CODE(t) == VAR_DECL) {
++        fprintf(stderr, "val: %s\n", print_generic_expr_to_str(t));
++        fprintf(stderr, "val type: %s\n", print_generic_expr_to_str(TREE_TYPE (t)));
++      }
++    }
++  }
++
++  return 0;
++}
++
++} // anon namespace
++
++gimple_opt_pass *
++make_pass_gimple_pass (gcc::context *ctxt)
++{
++  return new pass_gimple_pass (ctxt);
++}
+```
