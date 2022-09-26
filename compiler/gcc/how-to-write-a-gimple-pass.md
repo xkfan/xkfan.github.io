@@ -276,3 +276,22 @@ index 000000000..6b66bedec
 +  return new pass_gimple_pass (ctxt);
 +}
 ```
+
+## 4. Define the *`tv_id`* of our pass *`gimple_pass`*
+
+*`tv_id`* is defined in *`timevar.def`*
+
+```patch
+diff --git a/gcc/timevar.def b/gcc/timevar.def
+index 63c0b3306..23803049e 100644
+--- a/gcc/timevar.def
++++ b/gcc/timevar.def
+@@ -221,6 +221,7 @@ DEFTIMEVAR (TV_TREE_SWITCH_LOWERING,   "tree switch lowering")
+ DEFTIMEVAR (TV_TREE_RECIP            , "gimple CSE reciprocals")
+ DEFTIMEVAR (TV_TREE_SINCOS           , "gimple CSE sin/cos")
+ DEFTIMEVAR (TV_TREE_WIDEN_MUL        , "gimple widening/fma detection")
++DEFTIMEVAR (TV_GIMPLE_PASS           , "gimple pass")
+ DEFTIMEVAR (TV_TRANS_MEM             , "transactional memory")
+ DEFTIMEVAR (TV_TREE_STRLEN           , "tree strlen optimization")
+ DEFTIMEVAR (TV_TREE_MODREF	     , "tree modref")
+ ```
