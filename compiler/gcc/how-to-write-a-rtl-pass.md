@@ -268,3 +268,22 @@ index 000000000..b9ecef1ae
 +  return new pass_rtl_pass (ctxt);
 +}
 ```
+
+## 4. Define the *`tv_id`* of our pass *`rtl_pass`*
+
+*`tv_id`* is defined in *`timevar.def`*
+
+```patch
+diff --git a/gcc/timevar.def b/gcc/timevar.def
+index 23803049e..418312800 100644
+--- a/gcc/timevar.def
++++ b/gcc/timevar.def
+@@ -222,6 +222,7 @@ DEFTIMEVAR (TV_TREE_RECIP            , "gimple CSE reciprocals")
+ DEFTIMEVAR (TV_TREE_SINCOS           , "gimple CSE sin/cos")
+ DEFTIMEVAR (TV_TREE_WIDEN_MUL        , "gimple widening/fma detection")
+ DEFTIMEVAR (TV_GIMPLE_PASS           , "gimple pass")
++DEFTIMEVAR (TV_RTL_PASS              , "rtl pass")
+ DEFTIMEVAR (TV_TRANS_MEM             , "transactional memory")
+ DEFTIMEVAR (TV_TREE_STRLEN           , "tree strlen optimization")
+ DEFTIMEVAR (TV_TREE_MODREF	     , "tree modref")
+ ```
