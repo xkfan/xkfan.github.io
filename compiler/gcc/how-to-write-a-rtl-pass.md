@@ -287,3 +287,22 @@ index 23803049e..418312800 100644
  DEFTIMEVAR (TV_TREE_STRLEN           , "tree strlen optimization")
  DEFTIMEVAR (TV_TREE_MODREF	     , "tree modref")
  ```
+
+## 5. Register our new pass
+
+A pass is registered in *`tree-pass.h`*
+
+```patch
+diff --git a/gcc/tree-pass.h b/gcc/tree-pass.h
+index ee8053b26..34b122028 100644
+--- a/gcc/tree-pass.h
++++ b/gcc/tree-pass.h
+@@ -629,6 +629,7 @@ extern rtl_opt_pass *make_pass_set_nothrow_function_flags (gcc::context *ctxt);
+ extern rtl_opt_pass *make_pass_dwarf2_frame (gcc::context *ctxt);
+ extern rtl_opt_pass *make_pass_final (gcc::context *ctxt);
+ extern rtl_opt_pass *make_pass_rtl_seqabstr (gcc::context *ctxt);
++extern rtl_opt_pass *make_pass_rtl_pass (gcc::context *ctxt);
+ extern gimple_opt_pass *make_pass_release_ssa_names (gcc::context *ctxt);
+ extern gimple_opt_pass *make_pass_early_inline (gcc::context *ctxt);
+ extern gimple_opt_pass *make_pass_local_fn_summary (gcc::context *ctxt);
+ ```
