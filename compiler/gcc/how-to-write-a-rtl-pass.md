@@ -306,3 +306,22 @@ index ee8053b26..34b122028 100644
  extern gimple_opt_pass *make_pass_early_inline (gcc::context *ctxt);
  extern gimple_opt_pass *make_pass_local_fn_summary (gcc::context *ctxt);
  ```
+
+## 6. Set the location of our new pass
+
+The location of a pass is defined in *`passes.def`*
+
+```patch
+diff --git a/gcc/passes.def b/gcc/passes.def
+index 5ca9cc8fe..4b10257f9 100644
+--- a/gcc/passes.def
++++ b/gcc/passes.def
+@@ -510,6 +510,7 @@ along with GCC; see the file COPYING3.  If not see
+ 	  NEXT_PASS (pass_delay_slots);
+ 	  NEXT_PASS (pass_split_for_shorten_branches);
+ 	  NEXT_PASS (pass_convert_to_eh_region_ranges);
++	  NEXT_PASS (pass_rtl_pass);
+ 	  NEXT_PASS (pass_shorten_branches);
+ 	  NEXT_PASS (pass_set_nothrow_function_flags);
+ 	  NEXT_PASS (pass_dwarf2_frame);
+ ```
