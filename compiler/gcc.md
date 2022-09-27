@@ -18,6 +18,6 @@ TODO
 
 1. [How to write a gimple pass](https://xkfan.github.io/compiler/gcc/how-to-write-a-gimple-pass)
 
-2. How to write a rtl pass?
+2. [How to write a rtl pass](https://xkfan.github.io/compiler/gcc/how-to-write-a-rtl-pass)
 
 3. How to add a new instruction through gcc internal functions?
