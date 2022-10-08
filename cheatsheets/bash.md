@@ -132,47 +132,50 @@ sudo {command}      # 以 root 权限执行某命令
 ## 进程管理
 
 ```bash
-ps                        # 查看当前会话进程
-ps ax                     # 查看所有进程，类似 ps -e
-ps aux                    # 查看所有进程详细信息，类似 ps -ef
-ps auxww                  # 查看所有进程，并且显示进程的完整启动命令
-ps -u {user}              # 查看某用户进程
-ps axjf                   # 列出进程树
-ps xjf -u {user}          # 列出某用户的进程树
-ps -eo pid,user,command   # 按用户指定的格式查看进程
-ps aux | grep httpd       # 查看名为 httpd 的所有进程
-ps --ppid {pid}           # 查看父进程为 pid 的所有进程
-pstree                    # 树形列出所有进程，pstree 默认一般不带，需安装
-pstree {user}             # 进程树列出某用户的进程
-pstree -u                 # 树形列出所有进程以及所属用户
-pgrep {procname}          # 搜索名字匹配的进程的 pid，比如 pgrep apache2
+ps                               # 查看当前会话进程
+ps ax                            # 查看所有进程，类似 ps -e
+ps aux                           # 查看所有进程详细信息，类似 ps -ef
+ps auxww                         # 查看所有进程，并且显示进程的完整启动命令
+ps -u {user}                     # 查看某用户进程
+ps axjf                          # 列出进程树
+ps xjf -u {user}                 # 列出某用户的进程树
+ps -eo pid,user,command          # 按用户指定的格式查看进程
+ps aux | grep httpd              # 查看名为 httpd 的所有进程
+ps --ppid {pid}                  # 查看父进程为 pid 的所有进程
+pstree                           # 树形列出所有进程，pstree 默认一般不带，需安装
+pstree {user}                    # 进程树列出某用户的进程
+pstree -u                        # 树形列出所有进程以及所属用户
+pgrep {procname}                 # 搜索名字匹配的进程的 pid，比如 pgrep apache2
+ps aux | sort -k4nr | head -n 1  # 查看使用内存最多的进程
+ps aux | sort -k3nr | head -n 1  # 查看使用CPU最多的进程
 
-kill {pid}                # 结束进程
-kill -9 {pid}             # 强制结束进程，9/SIGKILL 是强制不可捕获结束信号
-kill -KILL {pid}          # 强制执行进程，kill -9 的另外一种写法
-kill -l                   # 查看所有信号
-kill -l TERM              # 查看 TERM 信号的编号
-killall {procname}        # 按名称结束所有进程
-pkill {procname}          # 按名称结束进程，除名称外还可以有其他参数
+kill {pid}                       # 结束进程
+kill -9 {pid}                    # 强制结束进程，9/SIGKILL 是强制不可捕获结束信号
+kill -9 `pgrep {procname}`       # 强制结束名字匹配的进程，适用于多个同名进程
+kill -KILL {pid}                 # 强制执行进程，kill -9 的另外一种写法
+kill -l                          # 查看所有信号
+kill -l TERM                     # 查看 TERM 信号的编号
+killall {procname}               # 按名称结束所有进程
+pkill {procname}                 # 按名称结束进程，除名称外还可以有其他参数
 
-top                       # 查看最活跃的进程
-top -u {user}             # 查看某用户最活跃的进程
+top                              # 查看最活跃的进程
+top -u {user}                    # 查看某用户最活跃的进程
 
-any_command &             # 在后台运行某命令，也可用 CTRL+Z 将当前进程挂到后台
-jobs                      # 查看所有后台进程（jobs）
-bg                        # 查看后台进程，并切换过去
-fg                        # 切换后台进程到前台
-fg {job}                  # 切换特定后台进程到前台
+any_command &                    # 在后台运行某命令，也可用 CTRL+Z 将当前进程挂到后台
+jobs                             # 查看所有后台进程（jobs）
+bg                               # 查看后台进程，并切换过去
+fg                               # 切换后台进程到前台
+fg {job}                         # 切换特定后台进程到前台
 
-trap cmd sig1 sig2        # 在脚本中设置信号处理命令
-trap "" sig1 sig2         # 在脚本中屏蔽某信号
-trap - sig1 sig2          # 恢复默认信号处理行为
+trap cmd sig1 sig2               # 在脚本中设置信号处理命令
+trap "" sig1 sig2                # 在脚本中屏蔽某信号
+trap - sig1 sig2                 # 恢复默认信号处理行为
 
-nohup {command}           # 长期运行某程序，在你退出登陆都保持它运行
-nohup {command} &         # 在后台长期运行某程序
-disown {PID|JID}          # 将进程从后台任务列表（jobs）移除
+nohup {command}                  # 长期运行某程序，在你退出登陆都保持它运行
+nohup {command} &                # 在后台长期运行某程序
+disown {PID|JID}                 # 将进程从后台任务列表（jobs）移除
 
-wait                      # 等待所有后台进程任务结束
+wait                             # 等待所有后台进程任务结束
 ```
 
 ## 常用命令：SSH / 系统信息 / 网络
