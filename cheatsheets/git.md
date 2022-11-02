@@ -3,7 +3,7 @@
 ## branch
 
 ```bash
-git checkout -b dev     # Switch to a new branch 'dev'
+git checkout -b dev     # Create & switch to a new branch 'dev'
 git branch dev          # Create a new branch 'dev'
 git checkout dev        # Switch to branch 'dev'
 ```
