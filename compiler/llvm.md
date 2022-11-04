@@ -11,4 +11,4 @@ TODO
 3. How to use LLVM as a library
 
 
-[LLVM Language Reference Manual](LLVM Language Reference Manual)
+[LLVM Language Reference Manual](https://llvm.org/docs/LangRef.html)
