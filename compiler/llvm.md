@@ -12,3 +12,10 @@ TODO
 
 
 [LLVM Language Reference Manual](https://llvm.org/docs/LangRef.html)
+
+## Some useful options
+
+```bash
+-fno-discard-value-names     # keeps actual names of variables,
+                             # instead of emitting '%1', '%2', ...
+```
