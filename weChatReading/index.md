@@ -5,3 +5,5 @@
 [COMPILER](https://xkfan.github.io/weChatReading/compiler)
 
 [PPT](https://xkfan.github.io/weChatReading/ppt)
+
+[SUPERCOMPUTER](https://xkfan.github.io/weChatReading/supercomputer)
