@@ -49,3 +49,5 @@
 ### Others
 
 [RISC-V 能否超越 x86、Arm，成为下一代计算系统根技术的关键？](https://t.cj.sina.com.cn/articles/view/1798777247/6b37299f01902mtom)
+
+[RISC-V将被用于百亿亿级超算！欧洲E级超算将采用RISC-V等开源指令集架构处理器](https://xueqiu.com/4463035516/135802119)
