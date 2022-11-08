@@ -21,3 +21,31 @@
 [Apple Exploring RISC-V, Hiring RISC-V 'High Performance' Programmers](https://www.tomshardware.com/news/apple-looking-for-risc-v-programmers)
 
 [Apple Working on RISC-V Architecture](https://www.tomshardware.com/news/apple-looking-for-risc-v-programmers)
+
+### SiFive new chips
+
+[SiFive推出高达3.4Ghz的RISC-V处理器，高通和三星评估](https://blog.dzsc.com/0215jiejie/202211211344569.html)
+
+[SiFive Reveals New RISC-V Chips, the P670 and P470](https://www.tomshardware.com/news/sifive-reveals-new-riscv-processors)
+
+### Google Announces New Open-source OS for RISC-V Chips
+
+[谷歌宣布推出新的RISC-V芯片开源操作系统](https://www.eet-china.com/mp/a169833.html)
+
+[Google Announces New Open-source OS for RISC-V Chips](https://www.allaboutcircuits.com/news/google-announces-new-open-source-os-for-risc-v-chips/)
+
+### China may prove Arm wrong about RISC-V's role in the datacenter
+
+[China may prove Arm wrong about RISC-V's role in the datacenter](https://www.theregister.com/2022/10/05/china_riscvv_arm_datacenter/)
+
+[Arm是错的？中国将证明RISC-V能搅动数据中心！](https://posts.careerengine.us/p/633e33b124fd925ac6aecb94?from=latestPostSidePanel)
+
+### ARM IS THE NEW RISC/UNIX, RISC-V IS THE NEW ARM
+
+[ARM IS THE NEW RISC/UNIX, RISC-V IS THE NEW ARM](https://www.nextplatform.com/2022/09/22/arm-is-the-new-risc-unix-risc-v-is-the-new-arm/)
+
+[ARM成为新的RISC/UNIX，RISC-V是新的 ARM](https://posts.careerengine.us/p/632d10d463db231e4730edb6?from=latestPostSidePanel)
+
+### Others
+
+[RISC-V 能否超越 x86、Arm，成为下一代计算系统根技术的关键？](https://t.cj.sina.com.cn/articles/view/1798777247/6b37299f01902mtom)
