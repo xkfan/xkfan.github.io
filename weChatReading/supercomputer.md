@@ -1,4 +1,4 @@
-# PPT
+# Super Computer
 
 记录和SC有关的资料。
 
