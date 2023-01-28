@@ -53,3 +53,7 @@
 [RISC-V将被用于百亿亿级超算！欧洲E级超算将采用RISC-V等开源指令集架构处理器](https://xueqiu.com/4463035516/135802119)
 
 [所有“核”的未来都属于RISC-V？](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247683605&idx=5&sn=dbecf2ed6489710d4096881b8b4fe558&chksm=ce6f0ce2f91885f46d0e06b935ec4b3b69eac7562ed83c0f318336383ab428887e1014528058&mpshare=1&scene=1&srcid=0124pwaUwaeMcIMJ2PSecfKG&sharer_sharetime=1674573153006&sharer_shareid=3dfab670a7d12520d0e7f7136ac431bf&exportkey=n_ChQIAhIQa4KOflzQXSWi2ItYMAwwXxL0AQIE97dBBAEAAAAAAFMWKHG411oAAAAOpnltbLcz9gKNyK89dVj0g4FaULp9ZUFm8kCTfyJ7MMhATmCzN4bcja2qACzGiOLAwF2qtPsKVBRQcTQR0C03r4bAYxz1a1qfOI5lBs8OU%2F1kMlz%2F8QLaHjnwFqS0ON%2BDExDl89rCeEu3CJtgas0iFBjIIcamRpJp90JGXip9%2FISyeLCMbjD5kgETJCHfqfjEycMnwW%2B3dkQGj5Jb1vPehoz30t7uqIFAU%2FDJ2eDwMMxFDw5Mi%2FapkQHZ8Dj7Vtjay5VudJVyeJ0ux7jQc8pYmu%2Fjgf0%2F1xU%2BDYcWKQ0%3D&acctmode=0&pass_ticket=zrIxqXRiAkDQBEoF%2BpDMaVPHuUf%2FR7y4ZquhYVPou4LgAV6HG64BAvoxUNV%2ByQjlaLpME2Gwk7FEW2Oq9MOgSw%3D%3D&wx_header=0#rd)
+
+[Google、Intel、腾讯等大厂相继入局，RISC-V 终将彻改半导体行业](https://36kr.com/p/2074709630286721)
+
+[risc-v 前景如何？会形成与 x86、arm 三分天下的局面吗？](https://www.zhihu.com/question/357557401/answer/2828629042?utm_campaign=shareopn&utm_medium=social&utm_oi=61552401055744&utm_psn=1594760868834545664&utm_source=wechat_session)
