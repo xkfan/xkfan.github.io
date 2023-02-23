@@ -55,5 +55,12 @@
 ## ISAs
 [ISAs](https://xkfan.github.io/links/ISAs/isas)
 
+## What every programmer should know about memory
+[What every programmer should know about memory](https://lwn.net/Articles/250967/)
+
+[PDF](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+
+[How much of ‘What Every Programmer Should Know About Memory’ is still valid?](https://stackoverflow.com/questions/8126311/how-much-of-what-every-programmer-should-know-about-memory-is-still-valid)
+
 ## 学院简介
 [学院简介](https://www.nudt.edu.cn/xysz/jsjxy/index.htm)
