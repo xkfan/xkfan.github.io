@@ -2,6 +2,10 @@
 
 记录一些对gcc代码的分析以及使用技巧
 
+## GCC使用
+
+[gcc usage](https://xkfan.github.io/compiler/gcc/usage)
+
 ## GCC源码分析
 
 TODO
