@@ -39,9 +39,6 @@ Use semantics and default values that **comply with** GCC conventions.
 Use terminology that does not **conflict with** existing terms used by
 SIMD extensions or existing RTL operations-codes.
 
-Before diving into the specifics of our implementation,
-we introduce some basic terminology and notation.
-
 **Last, but not least**, we always **strive to** generate statements that
 will **eventually** translate into the most efficient instructions available
 on a target.
