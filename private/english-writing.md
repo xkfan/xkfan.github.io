@@ -55,3 +55,15 @@ techniques.
 outer-loop vectorization **relative to** scalar and inner-loop vectorized
 versions, using kernels of loop nests, on two platforms.
 - ...
+
+## Short Phrases
+
+Now all eyes are on how they will help shape policy as the Chinese economy
+**navigates a growing array of challenges, including**
+ sluggish consumption,
+rising unemployment,
+a downturn in the housing market,
+lack of business confidence,
+local governments' debt distress,
+an ageing population
+and increasing tension with the United States over technology sanctions.
