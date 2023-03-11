@@ -257,3 +257,86 @@ That
 many tech firms
 **to**
 draw down the deposits they held at SVB to fund their operations.
+
+## Long Sentences
+
+**Owing to**
+their flexibility in the resolution of simulation domain geometries,
+**they (particle methods) are regarded as superior to**
+ grid-based methods
+**if it comes to**
+complex geometries or moving boundary problems.
+
+**However, as usual nothing is for free,**
+particles methods
+**come with some disadvantages that do not apply to**
+grid-based methods.
+
+**Although**
+many models capable of simulating such flows
+**have been reported in the literature**,
+particle methods such as SPH
+**are arguably the most appealing conceptually and intuitively**.
+
+As a fully Lagrangian meshless method, Smoothed Particle Hydrodynamics (SPH)
+**has been successfully applied to various free surface problems such as**
+dam-break flow, breaking waves on beach, rigid body drop,
+and flow in sloshing tank, etc.
+**However, there are drawbacks inherent to**
+SPH
+**such as**
+an artificial stress term required to avoid tensile instability.
+**Additionally**,
+boundary deficiency artifacts remain problematic where particle field
+variables near the boundaries lose consistency resulting from the lack
+of influence of the neighboring particles in a support domain truncated
+by the boundaries.
+
+Vectorization, when applied automatically by a compiler,
+is referred to as autovectorization.
+In this paper,
+**we use the two terms interchangeably to refer to**
+compiler vectorization.
+
+Vectorization techniques that exploit this type of parallelism,
+such as [xx],
+**could be used as a complementary approach**
+to loop-based vectorization.
+
+**Attention must also be paid to** existing GCC operations and conventions.
+
+When introducing a new operation, a natural desire is to use
+**as general an abstraction as possible**.
+
+As demonstrated below, SIMD alignment mechanisms
+**vary greatly from platform to platform**,
+but there is also a lot of commonality between groups of platforms.
+
+**Particularly**,
+constructor inlining-or worse exclusion-due to optimization
+**render** class inheritance recovery **challenging**.
+
+
+However, the
+**performance benefit of** static\_cast
+**comes with a security risk**
+because information at compile time is
+**by no means** sufficient to fully verify the safety of type conversions.
+
+(In contributions).
+While evaluating CAVER,
+we discovered eleven previously unknown bad-casting vulnerabilities in two
+mature and widely-used open source projects, GNU libstdc++ and Firefox.
+All vulnerabilities have been reported and fixed in these
+projects’ latest releases.
+**We expect that integration with**
+unit tests and fuzzing infrastructure
+**will allow CAVER to**
+discover more bad-casting vulnerabilities
+**in the future**.
+
+**Given the well understood nature of** buffer overflow
+**and the numerous proposed solutions**,
+**it is reasonable to ask why protection mechanisms**
+that prevent buffer overflow **are not in widespread use**.
+**There are a number of barriers to adoption that have been identified, including:**
