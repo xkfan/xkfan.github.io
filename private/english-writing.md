@@ -64,6 +64,155 @@ versions, using kernels of loop nests, on two platforms.
 
 ## Short Phrases
 
+We also present **preliminary results** and future work.
+
+The performance of these applications can be **considerably increased**.
+
+Some **nontrivial** issues and choices.
+
+These mechanisms (packing and unpacking data elements in and out of
+vector registers and special permute instructions) are not easy to use,
+and **incur considerable penalties**.
+
+Accessing a block of memory from a location which is not aligned on a natural
+vector size boundary is often **prohibited** or
+**bears a heavy performance penalty**.
+
+Other platforms (MMX, SSE, MIPS, IA-64 and SPE) either have instructions
+to merge the high and low parts of two vectors, or something **akin to**
+the AltiVec vperm, but accepts only an immediate constant in
+the instruction.
+
+**To complicate things further**,
+none of the previously described techniques of Sections
+3.1 and 3.2 can transform the graphs into fully
+isomorphic.
+
+**To make matters worse**,
+the existing reordering fails when the code contains multiple
+commutative operations of the same type chained
+together.
+
+**It is worth noting that**,
+although alignment and aliasing were discussed by Maleki in [xxx],
+it was not fully explored in their paper.
+
+
+The
+programming paradigm
+popularly known as object-oriented programming (OOP)
+is widely used for developing large and complex applications
+because it
+**encapsulates**
+the implementation details of data structures and
+algorithms into objects;
+this
+**in turn**
+**facilitates**
+cleaner
+software design, better code reuse, and easier software maintenance.
+
+Code size is
+**an increasing concern on**
+resource constrained systems,
+**ranging from**
+embedded devices
+**to**
+cloud servers.
+To **address** the issue,
+lowering memory occupancy has become a
+**priority in**
+developing and deploying applications,
+and
+**accordingly** compiler-based optimizations have been proposed to reduce program footprint.
+However,
+**prior arts** are generally dealing with source codes or intermediate representations,
+and thus are very limited in scope in real scenarios where only binary files are commonly provided.
+**To fill the gap**,
+this paper presents a
+**novel** code-size optimization RollBin to reroll loops at binary level.
+RollBin first locates the unrolled loops in binary files,
+and then
+**probes** to decide the unrolling factor by identifying regular memory address patterns.
+To reconstruct the iterations,
+we propose a customized data dependency analysis that
+**tackles**
+the challenges
+brought by shuffled instructions and loop-carry dependencies.
+Next, the recognized iterations are rolled up through instruction removal and update,
+which are generally reverting the normal unrolling procedure.
+The evaluations on standard SPEC2006/2017
+and MiBench demonstrate that RollBin effectively shrinks code size
+by 1.7\% and 2.2\% on average (up to 7.8\%),
+which respectively
+**outperforms the state-of-the-arts by** 31\% and 38\%
+**In addition**,
+the use cases of representative realistic applications
+**manifest** that RollBin
+**can be applicable in practices**.
+
+It is useful in applications with nested parallelism,
+particularly where the amount of nested parallelism is irregular and cannot
+**be predicted beforehand**.
+However,
+**prior works** have shown that dynamic parallelism may
+**impose a high performance penalty**
+when a large number of small grids are launched.
+The large number of launches results in high launch latency due to congestion,
+and the small grid sizes result in
+**hardware underutilization**.
+
+**Several** compiler
+**works** involve direct outer-loop vectorization, include ...
+
+Heterogeneous Systems offer
+**tremendous** opportunities through hardware innovation,
+but this leaves a lot unanswered in regards to ‘how will we program them.’
+SYCL is a
+**Khronos** standard to extend C++ for Heterogeneous Programming,
+and is instructive to review
+**in terms of**
+the practical problems inherent in extending programming
+for heterogeneous systems.
+
+However,
+this approach is limited because
+dynamic\_cast only
+supports polymorphic classes,
+**whereas**
+static\_cast
+is used for both polymorphic and non-polymorphic classes.
+
+... making the technique more
+**viable for practical adoption**.
+
+One approach to get good accuracy is to modify the representation of pointers
+to **associate** the pointer **with** information on the bounds of the
+underlying object.
+
+In principle, bounds check instrumentation eliminates the problem,
+but this introduces high overheads and **is further hampered by**
+limited compatibility against un-instrumented code.
+
+To address this problem,
+we present an extension of low-fat pointers to stack objects by using
+a collection of techniques,
+such as pointer mirroring and memory aliasing,
+**thereby**
+allowing stack objects to
+**enjoy bounds error protection from**
+instrumented code.
+
+Although memory errors **have been well researched with numerous proposed solutions**,
+the threat **nevertheless persists**.
+
+Low runtime performance overheads are important
+(and in general the lower the better),
+however the impact is **application dependent**.
+For example,
+the AddressSanitizer-hardened Tor browser is an example application
+where security **is prioritized over** performance.
+
 Now all eyes are on how they will help shape policy as the Chinese economy
 **navigates a growing array of challenges, including**
  sluggish consumption,
