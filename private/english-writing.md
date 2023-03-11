@@ -8,7 +8,7 @@ For more details we
 In other (**e.g.,** C) programs, ...
 
 A serial loop that computes the remaining N%VF iterations is also
-added for the case that N dost not **evenly divide by** VF.
+added for the case that N does not **evenly divide by** VF.
 
 Finally, the loop bound is transformed to reflect the new number of iterations,
 **and if necessary**,
@@ -48,6 +48,12 @@ errors **are a** common source
 of security vulnerabilities.
 ..., low-fat pointers **are a** recent scheme for ....
 
+Silicon Valley Bank collapsed Friday morning after a
+**stunning**
+48 hours in which a bank run and a capital crisis led to
+**the second-largest**
+failure of a financial institution in US history.
+
 The contributions of the paper are **threefold**:
 - **Comprehensive survey of alternative** outer-loop vectorization
 techniques.
@@ -67,3 +73,38 @@ lack of business confidence,
 local governments' debt distress,
 an ageing population
 and increasing tension with the United States over technology sanctions.
+
+It's not clear if Iran has successfully reverse-engineered any US weapons
+taken in Ukraine,
+but Tehran
+**has proven highly adept at**
+developing weapons systems based on US equipment seized in the past.
+
+In the hands of Iran's proxies,
+these weapons
+**pose a real threat to**
+Israel's conventional military forces.
+
+The FDIC,
+an independent government agency that insures bank deposits
+and oversees financial institutions,
+said all insured depositors will have full access to their insured deposits
+**by no later than**
+Monday morning.
+
+**The wheels started to come off** on Wednesday,
+when SBV announced it had sold a bunch of securities at a loss and
+that it would sell $2.25 billion in new shares to shore up its balance sheet.
+
+Silicon Valley Bank’s decline
+**stems partly from**
+the Federal Reserve’s aggressive interest rate hikes over the past year.
+
+Higher rates hit tech especially hard,
+undercutting the value of tech stocks and making it tough to raise funds,
+Moody’s chief economist Mark Zandi said.
+That
+**prompted**
+many tech firms
+**to**
+draw down the deposits they held at SVB to fund their operations.
