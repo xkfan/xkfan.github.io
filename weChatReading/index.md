@@ -7,7 +7,3 @@
 [PPT](https://xkfan.github.io/weChatReading/ppt)
 
 [SUPERCOMPUTER](https://xkfan.github.io/weChatReading/supercomputer)
-
-[RESEARCH POLITICS](https://xkfan.github.io/weChatReading/research-politics)
-
-[POLITICS](https://xkfan.github.io/weChatReading/politics)
