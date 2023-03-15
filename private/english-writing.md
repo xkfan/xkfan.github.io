@@ -258,6 +258,27 @@ many tech firms
 **to**
 draw down the deposits they held at SVB to fund their operations.
 
+We have already seen that when memory accesses miss the caches the costs
+**skyrocket**.
+
+**As soon as**
+the L1d is
+**not sufficient anymore**
+the performance goes down
+**dramatically**
+to less than 6 bytes per cycle.
+
+The step at $2^{18}$ bytes is due to the
+**exhaustion**
+of the DTLB cache which means additional work for each new page.
+
+**What is more astonishing**
+than the read performance is the write and copy performance.
+
+This does not mean the Core 2 processors perform poorly.
+**To the contrary,**
+their performance is always better than the Netburst core’s.
+
 ## Long Sentences
 
 **Owing to**
