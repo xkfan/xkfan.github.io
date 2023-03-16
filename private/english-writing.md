@@ -279,6 +279,14 @@ This does not mean the Core 2 processors perform poorly.
 **To the contrary,**
 their performance is always better than the Netburst core’s.
 
+Such a system structure has a number of
+**noteworthy**
+consequences:
+
+The read performance throughout the working set range
+**hovers around**
+the optimal 16 bytes per cycle.
+
 ## Long Sentences
 
 **Owing to**
