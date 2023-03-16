@@ -287,6 +287,32 @@ The read performance throughout the working set range
 **hovers around**
 the optimal 16 bytes per cycle.
 
+On Tuesday,
+OpenAI announced the next-generation version of
+the artificial intelligence technology that
+**underpins**
+its viral chatbot tool, ChatGPT.
+The more powerful GPT-4 promises to
+**blow**
+previous iterations
+**out of the water**,
+potentially changing the way we use the internet to work,
+play and create.
+But it could also add to challenging questions around
+how AI tools can upend professions,
+enable students to cheat,
+and shift our relationship with technology.
+
+It is now available via a waitlist and has already
+**made its way into**
+some third-party products,
+including Microsoft’s new AI-powered Bing search engine.
+Some users with early access to the tool are sharing their experiences and
+**highlighting**
+some of its most
+**compelling**
+use cases.
+
 ## Long Sentences
 
 **Owing to**
