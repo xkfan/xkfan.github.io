@@ -313,6 +313,19 @@ some of its most
 **compelling**
 use cases.
 
+With just a few days to go until the Federal Reserve’s
+next interest rate decision,
+US policymakers are sitting
+**between a rock and a hard place**.
+
+So far,
+Xi has been helping Putin by sticking to a delicate balancing act:
+refusing to publicly condemn Putin’s war
+and blaming the West for “provoking” Russia,
+while strengthening economic ties but
+**stopping short of**
+providing “lethal” military aid to Moscow.
+
 ## Long Sentences
 
 **Owing to**
