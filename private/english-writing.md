@@ -326,6 +326,29 @@ while strengthening economic ties but
 **stopping short of**
 providing “lethal” military aid to Moscow.
 
+Evaluated with 10 representative DNN models widely adopted in various domains,
+Cloudblazer i20
+**outperforms**
+Nvidia T4 and A10 GPUs
+**with a geometric mean of**
+2.22x and 1.16x in performance and 1.04x and 1.17x in energy efficiency, respectively.
+
+Thus,
+**now more than ever**,
+it is essential to
+**maximally utilize a CPU’s hardware resources**
+to
+**squeeze out every last drop of single thread performance**.
+
+Many prior compiler **works** [xxx] have
+**demonstrated the efficacy**
+of vectorization.
+
+**In the absence of**
+DLP,
+only floating point computations are performed in the vector pipeline
+as the general purpose register file is not connected to floating point units.
+
 ## Long Sentences
 
 **Owing to**
