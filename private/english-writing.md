@@ -349,6 +349,12 @@ DLP,
 only floating point computations are performed in the vector pipeline
 as the general purpose register file is not connected to floating point units.
 
+The meeting
+**kicked off**
+Li’s four-day visit to Russia – his first overseas trip since
+**stepping into**
+the role last month.
+
 ## Long Sentences
 
 **Owing to**
