@@ -355,6 +355,15 @@ Li’s four-day visit to Russia – his first overseas trip since
 **stepping into**
 the role last month.
 
+We argue that this manycore programmability challenge
+**is one of the key barriers to achieving the promise of**
+manycore architectures.
+
+Conventional wisdom suggests a work-stealing runtime,
+which forms the core of most dynamic task parallel programming models,
+**is ill-suited for**
+manycore architectures.
+
 ## Long Sentences
 
 **Owing to**
