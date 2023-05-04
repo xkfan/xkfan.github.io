@@ -444,16 +444,9 @@ echo "hello sir" | cut -d' ' -f2   # 显示 sir
 ps | tr -s " " | cut -d " " -f 2,3,4  # cut 搭配 tr 压缩字符
 ```
 
-## 文本处理 - awk / sed
+## 文本处理 - sed
 
 ```bash
-awk '{print $5}' file              # 打印文件中以空格分隔的第五列
-awk -F ',' '{print $5}' file       # 打印文件中以逗号分隔的第五列
-awk '/str/ {print $2}' file        # 打印文件中包含 str 的所有行的第二列
-awk -F ',' '{print $NF}' file      # 打印逗号分隔的文件中的每行最后一列 
-awk '{s+=$1} END {print s}' file   # 计算所有第一列的合
-awk 'NR%3==1' file                 # 从第一行开始，每隔三行打印一行
-
 sed 's/find/replace/' file         # 替换文件中首次出现的字符串并输出结果 
 sed '10s/find/replace/' file       # 替换文件第 10 行内容
 sed '10,20s/find/replace/' file    # 替换文件中 10-20 行内容
@@ -464,8 +457,10 @@ sed -i '/find/a\newline' file      # 在文件的匹配文本后插入行
 sed '/line/s/find/replace/' file   # 先搜索行特征再执行替换
 sed -e 's/f/r/' -e 's/f/r' file    # 执行多次替换
 sed 's#find#replace#' file         # 使用 # 替换 / 来避免 pattern 中有斜杆
-sed -i -r 's/^\s+//g' file         # 删除文件每行头部空格
+sed '1d' file                      # 删除文件第1行
+sed '1,3d' file                    # 删除文件第1-3行
 sed '/^$/d' file                   # 删除文件空行并打印
+sed -i -r 's/^\s+//g' file         # 删除文件每行头部空格
 sed -i 's/\s\+$//' file            # 删除文件每行末尾多余空格
 sed -n '2p' file                   # 打印文件第二行
 sed -n '2,5p' file                 # 打印文件第二到第五行
