@@ -11,5 +11,3 @@
 [PDF operations](https://xkfan.github.io/cheatsheets/pdf-ops)
 
 [AWK](https://xkfan.github.io/cheatsheets/awk)
-
-[SED](https://xkfan.github.io/cheatsheets/sed)
