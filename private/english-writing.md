@@ -364,6 +364,10 @@ which forms the core of most dynamic task parallel programming models,
 **is ill-suited for**
 manycore architectures.
 
+Turkey’s opposition
+**faces an uphill battle in runoff with**
+Erdogan.
+
 ## Long Sentences
 
 **Owing to**
