@@ -7,3 +7,9 @@
 ```bash
 gcc -Q -O3 --help=optimizers
 ```
+
+## Save "temporary" immediate files, helpful for debugging lto problems
+
+```bash
+gcc -flto -save-temps ...
+```
