@@ -368,6 +368,13 @@ Turkey’s opposition
 **faces an uphill battle in runoff with**
 Erdogan.
 
+Most Turkish polls had predicted
+**a knife-edge lead**
+for the main opposition candidate Kemal Kilicdaroglu.
+In the end, the reverse happened.
+Erdogan secured a five-point lead over his principal opponent,
+destining them to a run-off vote.
+
 ## Long Sentences
 
 **Owing to**
