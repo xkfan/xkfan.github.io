@@ -6,6 +6,8 @@
 
 [Ｃ语言中直接函数调用和间接函数调用的底层调用方式 X86 & AArch64](https://xkfan.github.io/function-call-low-level-details)
 
+[Running EasyConnect on Linux](https://xkfan.github.io/easyconnect-on-linux)
+
 [Cheatsheets](https://xkfan.github.io/cheatsheets/index)
 
 [Bash operations](https://xkfan.github.io/bash/bash)
