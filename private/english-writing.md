@@ -457,3 +457,11 @@ discover more bad-casting vulnerabilities
 **it is reasonable to ask why protection mechanisms**
 that prevent buffer overflow **are not in widespread use**.
 **There are a number of barriers to adoption that have been identified, including:**
+
+## Acknowledgements
+
+This paper and project would not have been possible without the contributions
+of numerous other individuals.
+We express our gratitude to all.
+We also acknowledge the Google Visiting Researcher Program for supporting the
+third author at the early times of MLIR.
