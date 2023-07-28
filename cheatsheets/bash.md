@@ -196,6 +196,8 @@ man -k {keyword}          # 查看哪些帮助文档里包含了该关键字
 info {help}               # 查看 info pages，比 man 更强的帮助系统
 uptime                    # 查看系统启动时间
 date                      # 显示日期
+date +%Y-%m-%d %H:%M:%S   # 以"yy-mm-dd hh:mm:ss"的形式显示日期
+date +%s.%N               # 显示从'1970-01-01 00:00 UTC'至今的时间：'secs.nano_secs'
 cal                       # 显示日历
 vmstat                    # 显示内存和 CPU 使用情况
 vmstat 10                 # 每 10 秒打印一行内存和 CPU情况，CTRL+C 退出
