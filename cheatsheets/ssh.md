@@ -27,3 +27,11 @@ id_rsa.pub (公钥)
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub username@hostmachine
 ```
+
+## 2 登录选项
+
+###
+
+```bash 2.1 防止超时
+ssh -o serveraliveinterval=60 username@host
+```
