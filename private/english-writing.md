@@ -62,6 +62,18 @@ outer-loop vectorization **relative to** scalar and inner-loop vectorized
 versions, using kernels of loop nests, on two platforms.
 - ...
 
+The V extension has been recently ratified,
+but comparing the different vector instruction sets across AArch64 and RISC-V
+**is beyond the scope of this initial comparison**;
+**we save this for future work**.
+
+Whilst the lower clock frequency of the V1 will impact performance somewhat
+compared to the V2,
+this does not explain such a large difference but as a performance comparison
+between the V1 and V2 is not the objective of this paper,
+**we leave the endeavour of explaining this phenomena to future work**.
+
+
 ## Short Phrases
 
 We also present **preliminary results** and future work.
