@@ -73,13 +73,6 @@ this does not explain such a large difference but as a performance comparison
 between the V1 and V2 is not the objective of this paper,
 **we leave the endeavour of explaining this phenomena to future work**.
 
-As a result,
-**significant efforts have been dedicated**,
-**by industry and academia**,
-to optimize this kernel for various processor architectures,
-**both historical and contemporary**,
-with a particular focus on those designed for HPC workloads.
-
 
 ## Short Phrases
 
@@ -476,6 +469,18 @@ discover more bad-casting vulnerabilities
 **it is reasonable to ask why protection mechanisms**
 that prevent buffer overflow **are not in widespread use**.
 **There are a number of barriers to adoption that have been identified, including:**
+
+As a result,
+**significant efforts have been dedicated**,
+**by industry and academia**,
+to optimize this kernel for various processor architectures,
+**both historical and contemporary**,
+with a particular focus on those designed for HPC workloads.
+**This emphasis exposes the importance of** gemm and
+**the recognition that**
+maximizing its efficiency
+**can have a profound impact on**
+the overall performance of computational systems.
 
 ## Acknowledgements
 
