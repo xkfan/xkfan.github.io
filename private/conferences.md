@@ -6,6 +6,8 @@
 
 Madrid, Spain - 26 - 30 August 2024
 
+[call for papers](https://2024.euro-par.org/calls/papers/)
+
 format: 14 pages (including references and any appendices), [Springer LNCS](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines)
 
 deadline: March 15, 2024
