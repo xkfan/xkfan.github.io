@@ -387,6 +387,41 @@ In the end, the reverse happened.
 Erdogan secured a five-point lead over his principal opponent,
 destining them to a run-off vote.
 
+We furthermore found that,
+despite the ability to scale vector lengths to large values,
+the added stress on the memory subsystem
+**diminishes the return on investment**.
+
+Findings include that a significant speedup could be achieved for about
+a third of the kernels,
+while a higher vectorization rate
+**does not necessarily translate into**
+a performance gain.
+
+Code performance is not **increasing proportionally with** increasing vector
+lengths due to the higher memory demands.
+
+Not all kernels benefit from increasing vector lengths,
+however,
+and we observe **a diminishing return on investment** for vector sizes
+larger than 512 bit.
+
+Recently,
+two **pivotal** technological developments
+**have driven the progression of** research and software advancement
+**within the realm of vector computing**:
+the Arm Scalable Vector Extension (SVE) and the NEC Aurora SX
+architecture.
+
+Xiaomi has unveiled its first electric car,
+just days after Huawei launched another one of its own,
+showing that
+**the efforts of**
+Chinese tech giants
+**to**
+join the electric vehicle race
+**are beginning to bear fruit**.
+
 ## Long Sentences
 
 **Owing to**
