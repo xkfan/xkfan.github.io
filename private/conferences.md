@@ -16,7 +16,9 @@ deadline: March 15, 2024
 
 Gotland, Sweden - August 12-15, 2024
 
-format: NOT available
+[call for papers](https://icpp2024.org/index.php?option=com_content&view=article&id=12&Itemid=110)
+
+format: ACM format, not exceed 10 pages (including references)
 
 deadline: April 15, 2024
 
@@ -28,9 +30,17 @@ Kobe, Japan - 24-27 September 2024
 
 deadline: April 25, 2024
 
-format: NOT available
+format: IEEE format, no more than 10 pages (excluding references), main text: 10pt
 
 ## stencil on riscv v, ccf c
+
+### [ica3pp 2024](https://ica3pp2024.scimeeting.cn/en/web/index/21666_)
+
+Macau, China | 29-31 October 2024
+
+deadline: 30 May 2024
+
+[Springer LNCS Format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines) 20 pages.
 
 ### [ica3pp 2023](https://tjutanklab.com/ica3pp2023/)
 
