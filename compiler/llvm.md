@@ -20,6 +20,7 @@ TODO
 ```bash
 -fno-discard-value-names     # keeps actual names of variables,
                              # instead of emitting '%1', '%2', ...
+-fno-integrated-as           # Disable the integrated assembler
 ```
 
 ### Diagnostics
