@@ -8,6 +8,11 @@ easyChair
 account: fanxiaokang@nudt.edu.cn
 passwd:  ecPasswd87
 
+Computer Engineering & Science
+email:   fanxiaokang@nudt.edu.cn
+account: fanxiaokang
+passwd:  jocesPasswd87_
+
 nsfc
 account: fanxiaokang@nudt.edu.cn
 passwd:  nP20231206
