@@ -1,3 +1,13 @@
+## AIP Physics of Fluids
+url:     https://pubs.aip.org/aip/pof
+account: fanxiaokang@nudt.edu.cn
+passwd:  lsfCSU123456
+
+## AIP Physics of Fluids
+url:     https://pof.peerx-press.org/cgi-bin/main.plex
+account: fanxiaokang@nudt.edu.cn
+passwd:  lsfCSU123456;
+
 ## editorial mananger (ccf thpc)
 url:     https://www2.cloud.editorialmanager.com/thpc/default2.aspx
 email:   fanxiaokang@nudt.edu.cn
