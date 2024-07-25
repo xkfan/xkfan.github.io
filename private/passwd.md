@@ -14,6 +14,12 @@ email:   fanxiaokang@nudt.edu.cn
 account: fanxiaokang
 passwd:  emPasswd87
 
+## editorial mananger (JPDC)
+url:     https://www.editorialmanager.com/jpdc/Default.aspx
+email:   fanxiaokang@nudt.edu.cn
+account: fanxiaokang
+passwd:  jpdc@emPasswd87
+
 ## easyChair
 account: fanxiaokang@nudt.edu.cn
 passwd:  ecPasswd87
