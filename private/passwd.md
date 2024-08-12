@@ -20,6 +20,12 @@ email:   fanxiaokang@nudt.edu.cn
 account: fanxiaokang
 passwd:  jpdc@emPasswd87
 
+## EDAS (HPCC 2024)
+url:     https://edas.info/
+email:   fanxiaokang@nudt.edu.cn
+ID:      2261574
+passwd:  edasPasswd87
+
 ## easyChair
 account: fanxiaokang@nudt.edu.cn
 passwd:  ecPasswd87
