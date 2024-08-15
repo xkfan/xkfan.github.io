@@ -74,6 +74,15 @@ deadline: September 22, 2023
 
 format: 8 pages including tables and figures in IEEE CS format.
 
+### [ispa 2024](https://www.ieee-ispa.org/2024/ispa/cfp.php)
+
+Kaifeng, China - 10.30 - 11.02
+
+deadline: 22 July, 2023
+
+format: 8 pages including tables and figures in IEEE CS format.
+
+
 ### [ispa 2023](http://www.ieee-hust-ncc.org/2023/ISPA/index.html)
 
 Wuhan, China - 21-24, December
@@ -81,6 +90,16 @@ Wuhan, China - 21-24, December
 deadline: 15 September, 2023
 
 format: 8 pages including tables and figures in IEEE CS format.
+
+### [npc 2024](https://www.npc-conference.com/#/npc2024/callforpapers)
+
+[npc conferences](https://www.npc-conference.com/#/)
+
+Haikou, China - 7 - 8 December 2024
+
+deadline: Aug 15, 2024
+
+format: 12 pages in LNCS format
 
 ### [npc 2022](http://npc2022.jlu.edu.cn/)
 
