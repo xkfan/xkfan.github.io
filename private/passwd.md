@@ -1,3 +1,8 @@
+## TECS
+url:     https://mc.manuscriptcentral.com/tecs
+account: fanxiaokang@nudt.edu.cn
+passwd:  tecsPasswd87
+
 ## AIP Physics of Fluids
 url:     https://pubs.aip.org/aip/pof
 account: fanxiaokang@nudt.edu.cn
