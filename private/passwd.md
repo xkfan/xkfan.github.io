@@ -1,3 +1,13 @@
+## 学信网
+url:     https://www.chsi.com.cn/
+account: 13787208712/fanxiaokang@nudt.edu.cn
+passwd:  chsiPasswd87
+
+## JCST
+url:     https://mc03.manuscriptcentral.com/jcst
+account: fanxiaokang@nudt.edu.cn
+passwd:  jcstPasswd87
+
 ## TECS
 url:     https://mc.manuscriptcentral.com/tecs
 account: fanxiaokang@nudt.edu.cn
