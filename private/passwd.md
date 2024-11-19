@@ -1,3 +1,8 @@
+## Wifi in n53-305
+name:         TP-LINK_15DF
+admin passwd: 53305Passwd87
+wifi  passwd: 15027264763
+
 ## 学信网
 url:     https://www.chsi.com.cn/
 account: 13787208712/fanxiaokang@nudt.edu.cn
