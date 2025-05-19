@@ -1,3 +1,16 @@
+## 萤石云视频
+account: 13787208712
+passwd:  fzh_20240428
+
+## 海雀
+account: 13787208712
+passwd:  fzh20240428
+
+## 北京一卡通
+account: 13787208712
+name:    fanxiaokang_87
+passwd:  bjPasswd87
+
 ## Wifi in n53-305
 name:         TP-LINK_15DF
 admin passwd: 53305Passwd87
@@ -27,6 +40,12 @@ passwd:  lsfCSU123456
 url:     https://pof.peerx-press.org/cgi-bin/main.plex
 account: fanxiaokang@nudt.edu.cn
 passwd:  lsfCSU123456;
+
+## editorial mananger (fitee)
+url:     https://www.editorialmanager.com/zusc/default.aspx
+email:   fanxiaokang@nudt.edu.cn
+account: fanxiaokang
+passwd:  emPasswd87
 
 ## editorial mananger (ccf thpc)
 url:     https://www2.cloud.editorialmanager.com/thpc/default2.aspx
@@ -69,7 +88,7 @@ passwd:  vPasswd87
 mobile:  15027264763
 
 ## lightwan
-id:      21292001
+id:      212920001
 account: 13787208712
 passwd:  lwPasswd87
 
