@@ -1,3 +1,11 @@
+## 2025编译竞赛
+https://compiler.educg.net
+account: fanxiaokang
+passwd:  ccPasswd87
+https://course.educg.net
+account: nudt_fxk
+passwd:  ccPasswd87
+
 ## 萤石云视频
 account: 13787208712
 passwd:  fzh_20240428
@@ -108,3 +116,14 @@ passwd: orcidPasswd87
 canqun@nudt.edu.cn
 0009-0008-4757-2475
 passwd: orcidCQ1234
+
+## Ge Zhen
+
+### email (Will expire on Dec 2025)
+account: zhenge@nudt.edu.cn
+passwd:  gzPasswd85
+
+### editorial mananger (fitee)
+email:   zhenge@nudt.edu.cn
+account: gezhen
+passwd:  gzPasswd85
