@@ -117,6 +117,11 @@ canqun@nudt.edu.cn
 0009-0008-4757-2475
 passwd: orcidCQ1234
 
+### Zhen Ge
+vbridge87@163.com
+0009-0004-5598-9263
+passwd: orcidP85
+
 ## Ge Zhen
 
 ### email (Will expire on Dec 2025)
