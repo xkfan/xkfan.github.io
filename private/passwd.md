@@ -54,6 +54,12 @@ url:     https://pof.peerx-press.org/cgi-bin/main.plex
 account: fanxiaokang@nudt.edu.cn
 passwd:  lsfCSU123456;
 
+## editorial mananger (fcs)
+url:     https://mc.manuscriptcentral.com/hepfcs
+email:   fanxiaokang@nudt.edu.cn
+account: fanxiaokang
+passwd:  fcsPasswd87
+
 ## editorial mananger (fitee)
 url:     https://www.editorialmanager.com/zusc/default.aspx
 email:   fanxiaokang@nudt.edu.cn
@@ -77,6 +83,10 @@ url:     https://edas.info/
 email:   fanxiaokang@nudt.edu.cn
 ID:      2261574
 passwd:  edasPasswd87
+
+## ccf
+account: fanxiaokang@nudt.edu.cn
+passwd:  ccfPasswd87
 
 ## easyChair
 account: fanxiaokang@nudt.edu.cn
