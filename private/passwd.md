@@ -147,3 +147,7 @@ passwd:  nudt17310018655
 email:   zhenge@nudt.edu.cn
 account: gezhen
 passwd:  gzPasswd85
+
+### springer nature (journal of supercomputing)
+email:   zhenge@nudt.edu.cn
+passwd:  gezhenPasswd85
