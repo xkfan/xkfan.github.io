@@ -1,3 +1,8 @@
+## gitee
+url:     https://www.gitee.com
+account: xkfan87
+passwd:  gtPasswd87
+
 ## 2025编译竞赛
 https://compiler.educg.net
 account: fanxiaokang
@@ -5,6 +10,10 @@ passwd:  ccPasswd87
 https://course.educg.net
 account: nudt_fxk
 passwd:  ccPasswd87
+
+## 精确被装申领
+account: id No.
+passwd:  bz@Passwd87
 
 ## 萤石云视频
 account: 13787208712
