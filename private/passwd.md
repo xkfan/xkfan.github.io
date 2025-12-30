@@ -150,6 +150,7 @@ passwd: orcidP85
 
 ### email (Will expire on Dec 2025)
 account: zhenge@nudt.edu.cn
+account: zhenge@alumni.nudt.edu.cn
 passwd:  nudt17310018655
 
 ### editorial mananger (fitee)
