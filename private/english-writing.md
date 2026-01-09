@@ -73,6 +73,9 @@ this does not explain such a large difference but as a performance comparison
 between the V1 and V2 is not the objective of this paper,
 **we leave the endeavour of explaining this phenomena to future work**.
 
+We use LLVM for our implementation,
+**though these concepts should generalize to other compilers**.
+
 
 ## Short Phrases
 
