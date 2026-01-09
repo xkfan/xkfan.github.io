@@ -3,6 +3,9 @@
 ## Conferences
 [Conferences](https://xkfan.github.io/private/conferences)
 
+## CNN News
+[CNN News](https://xkfan.github.io/private/cnn-news)
+
 ## English Writing
 [English Writing](https://xkfan.github.io/private/english-writing)
 
