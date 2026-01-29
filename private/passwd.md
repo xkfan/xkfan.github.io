@@ -104,11 +104,11 @@ passwd:  ecPasswd87
 ## Computer Engineering & Science
 email:   fanxiaokang@nudt.edu.cn
 account: fanxiaokang
-passwd:  jocesPasswd87_
+passwd:  jocesPasswd0127_
 
 ## nsfc
 account: fanxiaokang@nudt.edu.cn
-passwd:  nP20231206
+passwd:  nsfc@Passwd87
 
 ## xiaomi
 account: cell phone number
