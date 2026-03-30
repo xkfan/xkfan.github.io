@@ -58,7 +58,7 @@ $ export targetarch=aarch64-unknown-linux-gnu
 ### 2.3 Unzip the source code
 
 ```bash
-$ tar xvf gcc-11.1.0 -C ${srcdir}
+$ tar xvf gcc-11.1.0.tar.xz -C ${srcdir}
 $ tar xvf glibc-2.30.tar.xz -C ${srcdir}
 $ tar xvf binutils-2.37.tar.xz -C ${srcdir}
 $ tar xvf linux-4.19.230.tar.xz -C ${srcdir}
